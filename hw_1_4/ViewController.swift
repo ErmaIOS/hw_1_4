@@ -24,6 +24,8 @@ class ViewController: UIViewController {
         view.textColor = .init(hex: "#FFFFFF")
         return view
     }()
+   
+    
     private lazy var signInLabel:UILabel = {
         let view = UILabel()
         view.font = .systemFont(ofSize: 20)
@@ -324,7 +326,6 @@ class ViewController: UIViewController {
     
     
     @objc func eyeIconTapped(sender:UIButton){
-        
         passwordTF.isSecureTextEntry.toggle()
         
         let eyeIconImage = passwordTF.isSecureTextEntry ? UIImage(named: "closedEyeIcon") : UIImage(named: "eyeIcon")
@@ -348,9 +349,9 @@ class ViewController: UIViewController {
         
         if emailText.count < 4 || passwordText.count < 8 {
             if emailText.count < 4 {
-            emailTF.attributedPlaceholder = .init(string: "Please fill out", attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
-            firstStripe.layer.borderWidth = 2
-        }
+                emailTF.attributedPlaceholder = .init(string: "Please fill out", attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+                firstStripe.layer.borderWidth = 2
+            }
             if passwordText.count < 8{
                 passwordTF.attributedPlaceholder = .init(string: "Please fill out", attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
                 secondStripe.layer.borderWidth = 2
