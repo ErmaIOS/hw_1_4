@@ -142,6 +142,7 @@ class SecondViewController: UIViewController {
             make.width.equalTo(18)
         }
     }
+    
     private func setupView(){
         whiteView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide).offset(163)
@@ -183,7 +184,7 @@ class SecondViewController: UIViewController {
     }
     
     
-    private func setupLabel(){
+     private func setupLabel(){
         fullNameLabel.snp.makeConstraints { make in
             make.top.equalTo(whiteView.snp.top).offset(55)
             make.leading.equalToSuperview().offset(22)
@@ -214,6 +215,7 @@ class SecondViewController: UIViewController {
         }
         
     }
+    
     private func setupTF(){
         fullNameTF.snp.makeConstraints { make in
             make.top.equalTo(fullNameLabel.snp.bottom).offset(13)
@@ -246,6 +248,7 @@ class SecondViewController: UIViewController {
             make.height.equalTo(20)
         }
     }
+    
     private func setupButton(){
         signUpBtn.snp.makeConstraints { make in
             make.top.equalTo(confirmPasswordStripe.snp.bottom).offset(33)

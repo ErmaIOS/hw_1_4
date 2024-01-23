@@ -48,7 +48,6 @@
 		AC35746D2B52C48B001A21E4 = {
 			isa = PBXGroup;
 			children = (
-				ACB1BEEA2B55783100F97B85 /* Helper */,
 				AC3574782B52C48B001A21E4 /* hw_1_4 */,
 				AC3574772B52C48B001A21E4 /* Products */,
 			);
@@ -65,25 +64,50 @@
 		AC3574782B52C48B001A21E4 /* hw_1_4 */ = {
 			isa = PBXGroup;
 			children = (
-				AC3574792B52C48B001A21E4 /* AppDelegate.swift */,
-				AC35747B2B52C48B001A21E4 /* SceneDelegate.swift */,
-				AC35747D2B52C48B001A21E4 /* ViewController.swift */,
-				ACBF996C2B5458CA00A0861A /* SecondViewController.swift */,
-				ACBF996E2B54590100A0861A /* ThirdViewController.swift */,
-				ACBF996A2B54533100A0861A /* FifthViewController.swift */,
-				AC3574822B52C48D001A21E4 /* Assets.xcassets */,
-				AC3574842B52C48D001A21E4 /* LaunchScreen.storyboard */,
+				ACDFBB752B5F0C6F004A580D /* AppDelegate */,
+				ACB1BEEA2B55783100F97B85 /* MakeView */,
+				ACDFBB762B5F0C9C004A580D /* Resourse */,
+				ACDFBB742B5F0C59004A580D /* Common */,
 				AC3574872B52C48D001A21E4 /* Info.plist */,
 			);
 			path = hw_1_4;
 			sourceTree = "<group>";
 		};
-		ACB1BEEA2B55783100F97B85 /* Helper */ = {
+		ACB1BEEA2B55783100F97B85 /* MakeView */ = {
 			isa = PBXGroup;
 			children = (
 				ACB1BEEB2B55784B00F97B85 /* MakeView.swift */,
 			);
-			path = Helper;
+			path = MakeView;
+			sourceTree = "<group>";
+		};
+		ACDFBB742B5F0C59004A580D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AC35747D2B52C48B001A21E4 /* ViewController.swift */,
+				ACBF996C2B5458CA00A0861A /* SecondViewController.swift */,
+				ACBF996E2B54590100A0861A /* ThirdViewController.swift */,
+				ACBF996A2B54533100A0861A /* FifthViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		ACDFBB752B5F0C6F004A580D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AC35747B2B52C48B001A21E4 /* SceneDelegate.swift */,
+				AC3574792B52C48B001A21E4 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		ACDFBB762B5F0C9C004A580D /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				AC3574842B52C48D001A21E4 /* LaunchScreen.storyboard */,
+				AC3574822B52C48D001A21E4 /* Assets.xcassets */,
+			);
+			path = Resourse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

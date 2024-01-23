@@ -40,13 +40,16 @@ class MakeView{
     func makerTF(tfPlaceholder: String = "",
                  tfBorderColor: CGColor = UIColor.red.cgColor,
                  tfCornerRadius: CGFloat = 12,
+                 tfBackgroundColor: UIColor = .white,
                  tfTextSize: CGFloat = 20,
                  tfLeftViewMode: UITextField.ViewMode = .always,
-                 tfTextColor: UIColor = .blue) -> UITextField{
+                 tfTextColor: UIColor = .blue
+    ) -> UITextField{
         let view = UITextField()
         view.placeholder = tfPlaceholder
         view.layer.borderColor = tfBorderColor
         view.layer.cornerRadius = tfCornerRadius
+        view.backgroundColor = tfBackgroundColor
         view.font = .systemFont(ofSize: tfTextSize)
         let view2 = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: 5))
         view.leftView = view2
@@ -65,6 +68,8 @@ class MakeView{
         view.contentMode = imageContentMode
         view.backgroundColor = imageBackgroundColor
         view.tintColor = imageTintColor
+        
+        
         return view
     }
     
