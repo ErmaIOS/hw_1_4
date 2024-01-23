@@ -56,7 +56,7 @@ class MakeView{
     }
     
     func makerImage(imageName: String = "",
-                    imageContentMode: UIView.ContentMode = .scaleAspectFit,
+                    imageContentMode: UIView.ContentMode = .scaleAspectFill ,
                     imageBackgroundColor: UIColor = .white,
                     imageTintColor: UIColor = .white
                     )-> UIImageView{
